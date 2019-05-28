@@ -23,9 +23,9 @@ while True:
     if user_response == "1":
         content = input("What is the note? \n> ")
         note_id = counter
+        counter += 1
         note = (note_id, str(now), content)
         notebook.append(note)
-        counter += 1
     elif user_response == "2":
         for note in notebook:
             print(f"ID: {note[0]}| {note[2]}")
